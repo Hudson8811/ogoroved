@@ -7,10 +7,9 @@ $(".header__burger").click(function(){
   
   });
   windowSize = $(window).width(); 
-  console.log(windowSize);
   $(window).on('resize', function(event){
     windowSize = $(window).width(); 
-    console.log(windowSize);
+
 });
   $(".main-menu__nav > ul > li > span").on('click', function(){
 
