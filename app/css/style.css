@@ -216,7 +216,23 @@ body.js-overflow {
   position: relative;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 730px) {
+  .header__consultant {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    max-width: 115px;
+  }
+  .header__consultant .consultant__text, .header__consultant .consultant__image {
+    display: none;
+  }
+  .header__consultant .consultant__video-btn {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 450px) {
   .header__consultant {
     display: none;
   }
@@ -307,6 +323,7 @@ body.js-overflow {
 
 .header__burger {
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -322,6 +339,12 @@ body.js-overflow {
             flex-direction: column;
     position: relative;
     z-index: 9100;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__burger {
     margin-left: auto;
   }
 }
@@ -400,6 +423,10 @@ body.js-overflow {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.main-menu ul > li > span {
+  cursor: pointer;
 }
 
 .main-menu ul > li {
@@ -1897,6 +1924,10 @@ body.js-overflow {
 
 .page-content__button:before {
   content: "Свернуть";
+}
+
+.page-content__button.active:before {
+  content: "Развернуть";
 }
 
 .page-content__list {
