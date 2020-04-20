@@ -196,6 +196,12 @@ body.js-overflow {
   width: 40px;
   border-radius: 50%;
   background: url(../img/header-triangle.png) no-repeat 14px center #9bc34e;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.consultant__video-btn:hover {
+  opacity: .7;
 }
 
 .header {
@@ -270,6 +276,13 @@ body.js-overflow {
 .header__link {
   color: #16716e;
   font-weight: 300;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__link:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .header__link:not(:last-child) {
@@ -508,6 +521,13 @@ body.js-overflow {
   display: block;
   padding: 12px 10px 12px 23px;
   background-color: #45a13c;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-menu ul > li > ul > li a:hover {
+  color: #45a13c;
+  background-color: #fff;
 }
 
 @media (min-width: 1025px) {
@@ -632,6 +652,25 @@ body.js-overflow {
 
 .popular-prods {
   padding-bottom: 25px;
+  position: relative;
+}
+
+.popular-prods--decor:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 287px;
+  height: 176px;
+  background: url(../images/tips-decor.png) no-repeat center center;
+}
+
+@media (max-width: 1024px) {
+  .popular-prods--decor:before {
+    display: none;
+  }
 }
 
 .catalog-row {
@@ -1037,6 +1076,12 @@ body.js-overflow {
   background: url(../images/tips-decor.png) center center no-repeat;
   background-size: cover;
   margin-left: -182px;
+}
+
+@media (max-width: 1024px) {
+  .tips:before {
+    display: none;
+  }
 }
 
 .popular-categories {
@@ -1509,6 +1554,12 @@ body.js-overflow {
   font-size: 13px;
   line-height: 20px;
   color: #16716e;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__link:hover {
+  opacity: .7;
 }
 
 .inside-page {
@@ -1572,6 +1623,14 @@ body.js-overflow {
   .inside-page__aside--decor {
     display: none;
   }
+}
+
+.inside-page__aside .new-articles {
+  padding: 0 0 40px;
+}
+
+.inside-page__aside .new-articles .catalog-item + .catalog-item {
+  margin-top: 30px;
 }
 
 @media (max-width: 1210px) {
@@ -1877,6 +1936,12 @@ body.js-overflow {
   width: 8px;
   height: 11px;
   background: url(../img/content-menu-arrow.png) no-repeat center left;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.page-content__link:hover:before {
+  left: 10px;
 }
 
 .page-content h3 {
